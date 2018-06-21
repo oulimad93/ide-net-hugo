@@ -1,0 +1,24 @@
+<section class="py-5 bg-light">
+  <div class="container d-flex align-items-center">
+      <h2 class="d-inline-block mr-4 mb-0">Nos projets</h2>
+      <button class="btn btn-sm mr-2" id="projects-prev">Previous</button>
+      <button class="btn btn-sm" id="projects-next">Next</button>
+  </div>
+  <div  id="projects-carousel">
+    {{ range .Data.Pages }}
+      <div class="px-2 py-4">
+          <article class="card shadow border-0">
+              <img src="{{ .Params.Image }}" alt="" class="card-img-top">
+              <div class="card-body">
+                <h4 class="card-title">{{ .Title }}</h4>
+                <p>{{ .Params.description }}</p>
+                <a href="{{ .Permalink }}" class="btn btn-sm btn-light text-primary">
+                  En savoir plus &raquo;
+                </a>
+              </div>
+          </article>
+      </div>
+    {{ end }}
+    
+  </div>
+</section>

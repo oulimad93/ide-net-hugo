@@ -1,0 +1,10 @@
+{{ define "main" }}
+Projects list page
+  <ul class="flex-ns flex-wrap mhn1-ns pa3">
+  {{ range .Data.Pages }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+  </ul>
+{{ end }}

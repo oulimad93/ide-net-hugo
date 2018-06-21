@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+
+media_folder: "static/img"
+public_folder: "img"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/_index.md"
+        label: "Page d'accueil"
+        name: "home"
+  
+  - name: "projects"
+    label: "Projects"
+    folder: "content/project"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Image, name: image, widget: image }
+      - { label: Description, name: body, widget: markdown }
+      
