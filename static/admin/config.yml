@@ -2,7 +2,7 @@ backend:
   name: git-gateway
 
 media_folder: "static/images"
-public_folder: "images"
+public_folder: "/images"
 
 collections:
   - name: "pages"
@@ -18,10 +18,11 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Image, name: image, widget: image }
-      - { label: Type, name: type, widget: "select", options: ["feature"]}
-      - { label: Description, name: body, widget: markdown }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Type", name: "type", widget: "hidden", default: "'service'"}
+      - { label: "Introduction", name: "description", widget: "text" }
+      - { label: "Description", name: "body", widget: "markdown" }
 
   - name: "feature"
     label: "Feature"
@@ -29,8 +30,8 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: Title, name: title, widget: string }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime"}
       - { label: "Type", name: "type", widget: "hidden", default: "'feature'"}
-      - { label: Description, name: body, widget: markdown }
+      - { label: "Description", name: "body", widget: "markdown" }
 
