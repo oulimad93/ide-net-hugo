@@ -31,6 +31,6 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: "Date", name: "date", widget: "datetime"}
-      - { label: "Type", name: "type", widget: "hidden", default: "feature"}
+      - { label: "Type", name: "type", widget: "hidden", default: "'feature'"}
       - { label: Description, name: body, widget: markdown }
 
