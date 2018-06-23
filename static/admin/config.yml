@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
 
-media_folder: "static/img"
-public_folder: "img"
+media_folder: "static/images"
+public_folder: "images"
 
 collections:
   - name: "pages"
@@ -11,7 +11,7 @@ collections:
       - file: "content/_index.md"
         label: "Page d'accueil"
         name: "home"
-  
+
   - name: "projects"
     label: "Projects"
     folder: "content/project"
@@ -21,4 +21,4 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Image, name: image, widget: image }
       - { label: Description, name: body, widget: markdown }
-      
+
