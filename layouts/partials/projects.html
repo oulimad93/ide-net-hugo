@@ -1,24 +1,39 @@
-<section class="py-5 bg-light">
-  <div class="container d-flex align-items-center">
-      <h2 class="d-inline-block mr-4 mb-0">Nos projets</h2>
-      <button class="btn btn-sm mr-2" id="projects-prev">Previous</button>
-      <button class="btn btn-sm" id="projects-next">Next</button>
-  </div>
-  <div  id="projects-carousel">
-    {{ range .Data.Pages }}
-      <div class="px-2 py-4">
-          <article class="card shadow border-0">
-              <img src="{{ .Params.Image }}" alt="" class="card-img-top">
-              <div class="card-body">
-                <h4 class="card-title">{{ .Title }}</h4>
-                <p>{{ .Params.description }}</p>
-                <a href="{{ .Permalink }}" class="btn btn-sm btn-light text-primary">
-                  En savoir plus &raquo;
-                </a>
-              </div>
-          </article>
+<section class="pt-70 pb-40" id="metiers">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <h4 class="heading md-heading">Secteurs d’activité</h4>
+        <p class="big">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis illo molestiae quidem totam quo labore facere ex quasi aspernatur sapiente!</p>
       </div>
-    {{ end }}
-    
+      <div class="col-lg-7">
+        <div class="arrow-wrapper">
+          <button type="button" class="slick-prev slick-arrow arrow-prev">Previous</button>
+          <button type="button" class="slick-next slick-arrow arrow-next">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix mb-70"></div>
+  <div class="container-fluid pr-0 pl-0">
+    <div class="services gutter-xs-narrow justify-content-center align-items-stretch pb-20">
+
+      {{ range .Data.Pages }}
+        <div>
+          <div class="card ml-25 mr-25 wow zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
+            <a href="">
+              <div class="card-body">
+                <div class="card-img card-img">
+                  <img class="card-img-top" src="{{ .Params.image }}" alt="Affichage Publicitaire">
+                </div>
+                <h4 class="card-title left mb-15">{{ .Title }}</h4>
+                <p>
+                </p><p>{{ .Params.description }}</p>                  <p></p>
+                <span class="link pt-0 mt-15">En savoir plus<i class="material-icons"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      {{ end }}
+    </div>
   </div>
 </section>

@@ -5,18 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ .Site.Title }}</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
-  <link rel="stylesheet" href="/css/app.css" />
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans|Roboto:300,400,500,700|Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/slick.css">
+  <link rel="stylesheet" href="/css/default.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- <link rel="stylesheet" href="/css/app.css" /> -->
 </head>
 <body>
   {{ partial "navbar" . }}
   {{ block "main" . }}{{ end }}
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="/js/slick.js"></script>
   <script src="/js/app.js"></script>
+  <script type="text/javascript">
+  $(".services").slick({
+    centerMode: true,
+    prevArrow: $(".arrow-prev"),
+    nextArrow: $(".arrow-next"),
+    centerPadding: '100px',
+    slidesToShow: 4,
+    responsive: [
+    {
+      breakpoint: 1580,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+    ]
+  });
+</script>
 </body>
 </html>

@@ -1,0 +1,100 @@
+
+#poststuff input[type=text],#poststuff input[type=search],#poststuff input[type=tel], 
+#poststuff input[type=url],#poststuff input[type=week],#poststuff input[type=password], 
+#poststuff input[type=email],#poststuff input[type=number],#poststuff textarea {
+    padding: 10px;
+    width: 100%!important;
+}
+#wpcf-post-relationship .wpcf-pr-has-entries {
+    margin: 0;
+    border: 1px solid #dfdfdf;
+    padding: 30px 10px;
+}
+#wpcf-post-relationship table th{
+    padding: 10px 0;
+    font-size: 14px;
+}
+#wpcf-post-relationship table th a{
+    text-decoration: none;
+}
+#wpcf-post-relationship table td:first-child, #wpcf-post-relationship table th:first-child {
+    display: none;
+}
+#types-child-table-projet-photo-1 table th:nth-child(4) a,
+#types-child-table-projet-photo-1 table th:nth-child(5) a{
+    color: #ebebeb;
+}
+#types-child-table-projet-photo-1 .textfield {
+    width: 100% !important;
+    min-width: 300px;
+    padding: 10px;
+    font-weight: bold;
+}
+#wpcf-post-relationship table .textfield {
+    width: 100% !important;
+    min-width: 230px;
+    padding: 10px;
+    font-weight: bold;
+}
+#wpcf-post-relationship table .js-wpt-numeric.wpt-numeric .textfield {
+    width: 100px!important;
+    min-width: 100px!important;
+    padding: 10px;
+    font-weight: bold;
+}
+#wpcf-post-relationship table .textarea {
+    width: 100%!important;
+    min-width: 280px;
+    min-height: 120px !important;
+    line-height: 1.725;
+    padding: 10px;
+}
+#wpcf-post-relationship .actions a {
+    line-height: 25px;
+    margin-bottom: 10px;
+    width: 97%;
+    text-align: center;
+    font-weight: bold;
+}
+#wpcf-post-relationship .actions a:nth-child(1) {
+    display: none;
+}
+#wpcf-post-relationship .actions a:nth-child(2) {
+    display: none;
+}
+
+.list-item-description {
+    padding-top: 10px;
+    display: none;
+}
+.wpt-file-preview img {
+    height: 100px;
+    margin-left: 1px;
+    margin-top: -10px;
+}
+.option-tree-ui-media-wrap img {
+    max-height: 200px;
+}
+/*----------- remove types button --------------------*/
+#wp-content-media-buttons, #wp-wpcf-services-media-buttons {
+    display: none;
+}
+
+/*------------- Width of wordpress menu ---------------*/
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+    width: 190px;
+}
+#wpcontent, #wpfooter {
+    margin-left: 190px;
+}
+#wpcf-post-relationship .wp-core-ui .button, .wp-core-ui .button-secondary {
+    float: right;
+    margin-top: 5px;
+}
+.option-tree-ui-button.button-secondary {
+    float: left;
+}
+#wpcf-post-relationship .wpcf-pr-has-title {
+    text-transform: uppercase;
+}
+
