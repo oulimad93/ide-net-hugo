@@ -24,6 +24,7 @@ collections:
 
   - name: "feature"
     label: "Feature"
+    filter: {field: "type", value: "feature"}
     folder: "content/feature"
     create: true
     slug: "{{slug}}"
