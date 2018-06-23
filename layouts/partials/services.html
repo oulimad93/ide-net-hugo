@@ -17,10 +17,10 @@
   <div class="container-fluid pr-0 pl-0">
     <div class="services gutter-xs-narrow justify-content-center align-items-stretch pb-20">
 
-      {{ range .Data.Pages }}
+      {{ range where .Data.Pages "Params.type" "service" }}
         <div>
           <div class="card ml-25 mr-25 wow zoomIn animated" style="visibility: visible; animation-name: zoomIn;">
-            <a href="">
+            <a href="{{ .Permalink }}">
               <div class="card-body">
                 <div class="card-img card-img">
                   <img class="card-img-top" src="{{ .Params.image }}" alt="Affichage Publicitaire">

@@ -1,6 +1,7 @@
 ---
 title: Transport de Personnes
 date: 2017-01-04T15:04:10.000Z
+type: "service"
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo commodi sed?
 image: /images/transport-de-personne-480x300.jpg

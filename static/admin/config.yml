@@ -22,3 +22,12 @@ collections:
       - { label: Image, name: image, widget: image }
       - { label: Description, name: body, widget: markdown }
 
+  - name: "feature"
+    label: "Feature"
+    folder: "content/feature"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: body, widget: markdown }
+

@@ -1,0 +1,68 @@
+<section class="section-block products-block pt-70 pb-30">
+  <div class="container">
+    <div class="product-block text-center">
+      <h2 class="heading md-heading centered">Awesome Features</h2>
+      <p class="big">NET-SYS garde une longueur d’avance en innovant régulièrement avec de nouveaux services.</p>
+      <div class="all-products">
+        <div class="row">
+          {{ range where .Data.Pages "Params.type" "feature" }}
+          <div class="col-md-3 product-item">
+            <img src="images/icons/regime-moteur.svg" alt="Régime moteur" class="product-icon">
+            <div class="product-title">{{ .Title }}</div>
+          </div>
+          {{ end }}
+          <!--
+          <div class="col-md-3 product-item">
+            <img src="images/icons/regime-moteur.svg" alt="Régime moteur" class="product-icon">
+            <div class="product-title">Régime Moteur</div>
+          </div>
+          <div class="col-md-3 product-item">
+            <img src="images/icons/consommation-carburant.svg" alt="Consommation carburant" class="product-icon"
+            style="background: #e48c73;">
+            <div class="product-title">Consommation Carburant</div>
+          </div>
+          <div class="col-md-3 product-item">
+            <img src="images/icons/niveau-reservoir.svg" alt="Niveau du reservoir" class="product-icon"
+            style="background: #e78c6a;">
+            <div class="product-title">Niveau du Reservoir</div>
+          </div>
+          <div class="col-md-3 product-item">
+            <img src="images/icons/distance-kilometrique.svg" alt="Distance kilometrique" class="product-icon"
+            style="background: #f36c6c">
+            <div class="product-title">Distance Kilometrique</div>
+          </div>
+          <div class="col-md-3 product-item">
+            <img src="images/icons/temperature-moteur.svg" alt="Température moteur" class="product-icon"
+            style="background: #ccc;">
+            <div class="product-title">Température Moteur</div>
+          </div>
+          <div class="col-md-3 product-item">
+           <img src="images/icons/vitesse-moyen.svg" alt="Vitesse Moyenne" class="product-icon"
+           style="background: #0086df;">
+           <div class="product-title">Vitesse Moyenne</div>
+          </div>
+          <div class="col-md-3 product-item">
+           <img src="images/icons/navigation-gps.svg" alt="Navigation Gps" class="product-icon"
+           style="background: #0084de;">
+           <div class="product-title">Navigation Gps</div>
+          </div>
+          <div class="col-md-3 product-item">
+           <img src="images/icons/messagerie.svg" alt="Messagerie Assiste" class="product-icon"
+           style="background: #2ccdf2">
+           <div class="product-title">Messagerie Assiste</div>
+          </div>
+          <div class="col-md-3 product-item">
+           <img src="images/icons/planification.svg" class="product-icon" alt="Planification et Optimisation"
+           style="background: #02e2d8">
+           <div class="product-title">Planification et Optimisation</div>
+          </div>
+          <div class="col-md-3 product-item">
+           <img src="images/icons/organisation-temps-réel.png" class="product-icon" alt="Planification et Optimisation"
+           style="background: #376aab;">
+           <div class="product-title">Organisation en Temps Réel de la Flotte</div>
+          </div> -->
+       </div>
+     </div>
+   </div>
+ </div>
+</section>

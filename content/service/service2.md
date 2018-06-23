@@ -1,6 +1,7 @@
 ---
 title: Force de Vente
 date: 2017-01-04T15:04:10.000Z
+type: "service"
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptatum, eaque?
 image: /images/011-480x300.jpg
