@@ -12,9 +12,9 @@ collections:
         label: "Page d'accueil"
         name: "home"
 
-  - name: "projects"
-    label: "Projects"
-    folder: "content/project"
+  - name: "service"
+    label: "Service"
+    folder: "content/service"
     create: true
     slug: "{{slug}}"
     fields:
