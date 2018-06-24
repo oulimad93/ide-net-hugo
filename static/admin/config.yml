@@ -34,7 +34,18 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime"}
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Couleur", name: "color", widget: "select", options: ["black", "yellow", "blue", "red", "purple", "orange", "pink", "grey", "green"]}
       - { label: "Type", name: "type", widget: "hidden", default: "feature"}
-      - { label: "Description", name: "body", widget: "markdown" }
+
+  - name: "client"
+    label: "Clients"
+    folder: "content/client"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Type", name: "type", widget: "hidden", default: "client"}
+
 
