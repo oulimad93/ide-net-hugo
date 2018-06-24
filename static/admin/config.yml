@@ -23,7 +23,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Type", name: "type", widget: "hidden", default: " 'service' "}
+      - { label: "Type", name: "type", widget: "hidden", default: 'service'}
       - { label: "Introduction", name: "description", widget: "text" }
       - { label: "Description", name: "body", widget: "markdown" }
 
