@@ -5,7 +5,7 @@
       <p class="big">NET-SYS garde une longueur d’avance en innovant régulièrement avec de nouveaux services.</p>
       <div class="all-products">
         <div class="row">
-          {{ range where .Data.Pages "Params.type" "client" }}
+          {{ range first 6 (where .Data.Pages "Params.type" "client") }}
           <div class="col-md-2 product-item">
             <img src="{{ .Params.Image }}" alt="{{ .Title }}" class="">
           </div>

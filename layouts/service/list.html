@@ -1,10 +1,38 @@
 {{ define "main" }}
-Projects list page
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
-  {{ range .Data.Pages }}
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-  {{ end }}
-  </ul>
+
+         <section class="pt-lg-70 pt-xs-40 mt-100 pb-0" id="metiers-archive">
+            <div class="clearfix mb-80"></div>
+            <div class="container">
+                <h2 class="heading md-heading centered wow fadeIn">Services Proposés</h2>
+                <p class="big">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis illo molestiae quidem totam quo labore facere ex quasi aspernatur sapiente!               </p>
+                <div class="addthis_inline_share_toolbox mt-30 text-center"></div>
+            </div>
+            <div class="clearfix mb-80"></div>
+            {{ range where .Data.Pages "Params.type" "service" }}
+                <a href="{{ .Permalink }}">
+                    <article class="metier-section" id="{{ .Params.title }}">
+                        <div class="container">
+                            <div class="row pt-80 pb-80">
+                                <div class="col-md-6">
+                                    <img src="{{ .Params.image }}" alt="{{ .Params.title }}" class="img-fluid img-raduis wow zoomIn">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="metier-wrapper wow fadeIn">
+                                        <h2 class="metier-heading">{{ .Params.title }}</h2>
+                                        <div class="big pr-lg-60">
+                                            {{ .Description }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            {{ end }}
+
+</section>
+{{ partial "footer" . }}
+
 {{ end }}
+

@@ -1,5 +1,5 @@
 <footer class="white-bg pt-60 pb-20">
-  <h2 class="text-center">(footer pas encore dynamique ou configurable)</h2><br/><br/>
+  <h2 class="text-center">(footer dynamique, recupere les clients, services et features)</h2><br/><br/>
   <div class="container pl-lg-0 pr-lg-0 pb-30">
    <div class="row">
     <div class="col-lg logo-col">
@@ -28,47 +28,28 @@
   <div class="col-lg footer-widget">
 
    <ul class="list">
-     <div class="list-title">Entreprise</div>
-     <li><a class="footer-link">A-propos</a></li>
-     <li><a class="footer-link">Produits</a></li>
-     <li><a class="footer-link">Métiers</a></li>
-     <li><a class="footer-link">Services</a></li>
-     <li><a class="footer-link">Clients</a></li>
-     <li><a class="footer-link">Contact</a></li>
+     <div class="list-title">Clients</div>
+     {{ range first 6 (where .Data.Pages "Params.type" "client") }}
+     <li><a class="footer-link">{{ .Params.title }}</a></li>
+     {{ end }}
    </ul>
  </div>
  <div class="col footer-widget">
 
    <ul class="list">
      <div class="list-title">Services</div>
-     <li><a class="footer-link">Géolocalisation</a></li>
-     <li><a class="footer-link">Dispositifs GPS</a></li>
-     <li><a class="footer-link">Solutions</a></li>
-     <li><a class="footer-link">SBAS</a></li>
-     <li><a class="footer-link">Aide conducteur</a></li>
-     <li><a class="footer-link">Infos véhicule</a></li>
+     {{ range first 6 (where .Data.Pages "Params.type" "service") }}
+     <li><a href="{{ .Permalink }}" class="footer-link">{{ .Params.title }}</a></li>
+     {{ end }}
    </ul>
  </div>
  <div class="col footer-widget">
 
    <ul class="list">
-     <div class="list-title">Secteurs d’activité</div>
-     <li><a class="footer-link">Métiers du bâtiment</a></li>
-     <li><a class="footer-link">Installation SAV</a></li>
-     <li><a class="footer-link">Travaux publics</a></li>
-     <li><a class="footer-link">Transports livraisons</a></li>
-     <li><a class="footer-link">Transports de personne</a></li>
-     <li><a class="footer-link">Propreté Collectivités</a></li>
-   </ul>
- </div>
- <div class="col footer-widget">
-
-   <ul class="list">
-     <div class="list-title">Lien utiles</div>
-     <li><a class="footer-link">Accès Client</a></li>
-     <li><a class="footer-link">Demande d’assistance</a></li>
-     <li><a class="footer-link">Transit Zakaria</a></li>
-     <li><a class="footer-link">Casbah Web</a></li>
+     <div class="list-title">Features</div>
+     {{ range first 6 (where .Data.Pages "Params.type" "feature") }}
+     <li><a class="footer-link">{{ .Params.title }}</a></li>
+     {{ end }}
    </ul>
  </div>
 </div>

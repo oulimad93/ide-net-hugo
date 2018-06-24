@@ -1,6 +1,5 @@
 ---
 title: Barook
-image: /images/l05.png
 type: client
+image: images/l05.png
 ---
-
