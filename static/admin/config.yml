@@ -54,6 +54,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Texte", name: "text", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Type", name: "type", widget: "hidden", default: "slide"}
@@ -64,6 +65,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Valeur", name: "valeur", widget: "string" }
       - { label: "Type", name: "type", widget: "select", options: ["Phone", "Email", "Adress"]}
 
