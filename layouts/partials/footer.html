@@ -4,22 +4,22 @@
    <div class="row">
     <div class="col-lg logo-col">
      <div class="logo">
-       <img src="images/logo.png" alt="" width="130">
+       <img src="/images/logo.png" alt="" width="130">
        <p class="big mt-30">Leader de la géolocalisation dans votre région</p>
        <ul class="social-list">
         <li>
           <a href="" target="_blank">
-            <img width="26" height="26" src="images/fb.svg" alt="facebook">
+            <img width="26" height="26" src="/images/fb.svg" alt="facebook">
           </a>
         </li>
         <li>
           <a href="" target="_blank">
-            <img width="26" height="26" src="images/linkedin.png" alt="linkedin">
+            <img width="26" height="26" src="/images/linkedin.png" alt="linkedin">
           </a>
         </li>
         <li>
           <a href="" target="_blank">
-            <img width="26" height="26" src="images/twitter.png" alt="twitter">
+            <img width="26" height="26" src="/images/twitter.png" alt="twitter">
           </a>
         </li>
       </ul>
@@ -29,7 +29,7 @@
 
    <ul class="list">
      <div class="list-title">Clients</div>
-     {{ range first 6 (where .Data.Pages "Params.type" "client") }}
+     {{ range first 6 (where .Site.Pages "Params.type" "client") }}
      <li><a class="footer-link">{{ .Params.title }}</a></li>
      {{ end }}
    </ul>
@@ -38,7 +38,7 @@
 
    <ul class="list">
      <div class="list-title">Services</div>
-     {{ range first 6 (where .Data.Pages "Params.type" "service") }}
+     {{ range first 6 (where .Site.Pages "Params.type" "service") }}
      <li><a href="{{ .Permalink }}" class="footer-link">{{ .Params.title }}</a></li>
      {{ end }}
    </ul>
@@ -47,7 +47,7 @@
 
    <ul class="list">
      <div class="list-title">Features</div>
-     {{ range first 6 (where .Data.Pages "Params.type" "feature") }}
+     {{ range first 6 (where .Site.Pages "Params.type" "feature") }}
      <li><a class="footer-link">{{ .Params.title }}</a></li>
      {{ end }}
    </ul>
