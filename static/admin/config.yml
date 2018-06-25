@@ -65,6 +65,6 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Valeur", name: "valeur", widget: "string" }
-      - { label: "Type", name: "type", widget: "select", options: ["Phone", "Email", "Adress"}
+      - { label: "Type", name: "type", widget: "select", options: ["Phone", "Email", "Adress"]}
 
 
